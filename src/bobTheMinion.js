@@ -1,7 +1,7 @@
 var BobTheDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
 
-  this.$node = $('<span class="bobDancer"></span>');
+  this.$node = $('<img src="http://pngimg.com/uploads/minions/minions_PNG86.png" class="bobDancer">');
   this.setPosition(top, left);
 };
 

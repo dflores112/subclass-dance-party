@@ -9,6 +9,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
   this.setPosition(top, left);
+  // this.step();
 
   // this.step = function() {
   //   // the basic dancer doesn't do anything interesting at all on each step,
@@ -45,6 +46,11 @@ Dancer.prototype.setPosition = function (top, left) {
     left: left
   };
   this.$node.css(styleSettings);
+};
+
+Dancer.prototype.lineUp = function(top, left) {
+  this.setPosition(top, left);
+  // this.$node.css('background-color', this._randomColor());
 };
 
 Dancer.prototype.constructor =
