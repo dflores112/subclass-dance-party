@@ -18,6 +18,19 @@ describe('stuartTheMinion', function() {
     expect(stuartTheMinion.$node.toggle.called).to.be.true;
   });
 
+
+  it('should have a lineUp function that makes dancers line left to right', function() {
+    // sinon.spy(stuartTheMinion.$node, 'toggle');
+    // stuartTheMinion.lineUp();
+    expect(typeof stuartTheMinion.lineUp === 'function').to.be.true;
+  });
+
+  it('should have a setPosition function that sets a random position of the dance', function() {
+    // sinon.spy(stuartTheMinion.$node, 'toggle');
+    // stuartTheMinion.lineUp();
+    expect(typeof stuartTheMinion.setPosition === 'function').to.be.true;
+  });
+
   describe('dance', function() {
     it('should call step at least once per second', function() {
       sinon.spy(stuartTheMinion, 'step');

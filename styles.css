@@ -4,8 +4,9 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
-  font-size: 18px;
+  /* font-size: 18px; */
   background-image: url(danceFloor.jpg);
+  /* background-image: url(); */
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -52,8 +53,16 @@ body, a:link, a:visited, a:active{
 .stuartDancer{
   height: 100px;
   position:absolute;
-
+  transform-origin: 50% 50%;
+  animation: jump 1s linear alternate infinite;
 }
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  30%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+
 
 
 
